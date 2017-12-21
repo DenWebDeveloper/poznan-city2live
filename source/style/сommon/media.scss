@@ -1,0 +1,55 @@
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 576px;
+
+// Small tablets (portrait view)
+$screen-md-max: 768px;
+
+// Tablets and small desktops
+$screen-lg-max: 959px;
+
+
+// Small devices
+@mixin sm {
+   @media (max-width: #{$screen-sm-max}) {
+       @content;
+   }
+}
+
+// Medium devices
+@mixin md {
+   @media (max-width: #{$screen-md-max}) {
+       @content;
+   }
+}
+
+// Large devices
+@mixin lg {
+   @media (max-width: #{$screen-lg-max}) {
+       @content;
+   }
+}
+ 
+
+.container {
+	max-width: 960px;
+    margin: 0 auto;
+    
+}
+
+html {
+	font-family: 'League Gothic', "Arial", sans-serif;
+	font-size: 16px;
+
+	@include lg() {
+		font-size: 15px;
+	}
+
+	@include md() {
+		font-size: 14px;
+	}
+
+	@include sm() {
+		font-size: 13px;
+	}
+}
