@@ -231,7 +231,9 @@ header {
 }
 
 .show-button {
+	display: none;
 	@include lg() {
+		display: block;
 		position: fixed;
 	font-size: 9px;	
 	z-index: 23;
