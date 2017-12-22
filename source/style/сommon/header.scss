@@ -29,6 +29,13 @@ header {
 	position: relative;
 	display: flex;
 	justify-content: center;
+
+	@include md() {
+		flex-wrap: wrap;	
+		justify-content: space-between;	
+		padding: 0 10px;
+		align-items: center;		
+	}
 }
 
 .header__logo {
@@ -38,9 +45,13 @@ header {
 }
 
 .social {
-	right: 0;
-	top: 20px;
+	right: 10px;
+    top: 7px;
 	position: absolute;
+
+	@include md() {
+		position: static;	
+	}
 }
 
 .social__items {
@@ -53,8 +64,29 @@ header {
 	display: block;
 	margin-right: 10px;
 	font-size: 0;
-	background-color: red;
+	background: transparent url(../img/evernote.png) center center no-repeat;
 }
+
+.social__link--twitter {
+	background-image: url(../img/twitter.png);
+}
+
+.social__link--instagram {
+	background-image: url(../img/instagram.png);
+}
+
+.social__link--facebook {
+	background-image: url(../img/facebook.png);
+}
+
+.social__link--delicious {
+	background-image: url(../img/delicious.png);
+}
+
+.social__link--pinterest {
+	background-image: url(../img/pinterest.png);
+}
+
 
 .nav {
 	margin-top: 12px;
@@ -64,6 +96,10 @@ header {
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
+
+	@include lg() {
+		flex-wrap: wrap;	
+	}
 }
 
 .nav__link {
@@ -98,7 +134,8 @@ header {
 	justify-content: space-between;
 	padding-top: 91px;
 	min-height: 435px;
-	background: transparent url(../img/main-img-container.jpg) top left no-repeat;
+	background: transparent url(../img/jumbotron-lg-bg.jpg) top left no-repeat;
+	background-size: auto 100%;
 }
 
 .jumbotron__content {
@@ -140,6 +177,10 @@ header {
 .comments__items {
 	 display: flex;
 	 justify-content: space-between;
+
+	 @include lg() {
+	 	flex-wrap: wrap;    
+	 }
 }
 
 .comments__item {
@@ -153,6 +194,10 @@ header {
 	&:last-child {
 		margin-right: 0;
 	}
+
+	@include lg() {
+	 	margin-top: 20px;    
+	 }
 }
 
 .comments__photo {
@@ -178,4 +223,44 @@ header {
 
 .comments__author {
 	color: #828282;
+}
+
+
+.comments__bloack-quote--padding {
+	padding-right: 15px;
+}
+
+.show-button {
+	@include lg() {
+		position: fixed;
+	font-size: 9px;	
+	z-index: 23;
+	font-family: "Arial";
+	font-weight: bold;
+	text-transform: uppercase;
+	top: 48%;
+	left: 0;
+	border-radius: 10px;
+	color: #fff;
+	background-color: orange;
+	border: none;
+	padding: 5px;
+	}
+}
+
+ 
+.show-button.active {
+	top: 20px;
+	left: 64%;
+}
+.sidebar.active {
+	display: block;
+	padding-left: 20px;
+	background-color: #fff;
+	position: fixed;
+	top: 0;  
+	z-index: 15;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
 }

@@ -4,6 +4,12 @@
 	align-items: center;
 	border-bottom: 1px dotted #d5d5d5;	
 	padding: 14px 0;
+
+
+	@include lg() {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 
 .footer__logo {

@@ -13,3 +13,19 @@ $(function() {
     map: map
   });
 });
+
+$(document).ready(function() {
+  var status = false;
+  $(".show-button.btn-unstyle").click(function() {
+    $(".sidebar").toggleClass("active");
+    $(".show-button.btn-unstyle").toggleClass("active");
+
+    if(!status) {
+      $(".show-button.btn-unstyle").text("close sidebar");
+      status = true;
+    } else {
+      $(".show-button.btn-unstyle").text("show sidebar");
+      status = false;
+    }
+  });
+});
