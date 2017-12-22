@@ -1,8 +1,60 @@
 .contnet
 	.content__wrraper.container
 		aside.sidebar
-			h2.sidebar__title ABOUT AUTHOR
-			p.sidebar__paragraph <span class="sidebar__blue">John Doe</span> - lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta.
+			div.author
+				h2.sidebar__title ABOUT AUTHOR
+				p.sidebar__paragraph <span class="sidebar__blue">John Doe</span> - lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta.
+			div.related
+				h2.sidebar__title RELATED POSTS
+				ul.related__items.list-unstyle
+					li.related__item
+						a(href="#").related__link
+							img(src="../assets/img/image-post-1.jpg", alt="Night")
+							.related__content
+								h5.related__title POZNAN AT NIGHT
+								button.related__comment.bth-unstyle 10 comments
+					li.related__item
+						a(href="#").related__link
+							img(src="../assets/img/image-post-2.jpg", alt="Night")
+							.related__content
+								h5.related__title PEOPLE TO MEET
+								button.related__comment.bth-unstyle 21 comments
+
+					li.related__item
+						a(href="#").related__link
+							img(src="../assets/img/image-post-3.jpg", alt="Night")
+							.related__content
+								h5.related__title VISIT OUR OFFICE
+								button.related__comment.bth-unstyle 17 comments
+			div.currency
+				h2.sidebar__title.currency__title CURRENCY
+				table.currency__table
+					tr.currency__tr
+						td.currency__th Date
+						td.currency__th Value
+						td.currency__th Status
+						td.currency__th Diff
+					tr.currency__tr
+						td.currency__td 22.1
+						td.currency__td 459.5
+						td.currency__td 
+							img(src="../assets/img/arrow-head.png", alt="arrow up")
+						td.currency__td 459.5
+					tr.currency__tr
+						td.currency__td 21.1
+						td.currency__td 448.5
+						td.currency__td
+							img(src="../assets/img/arrow-down.png", alt="arrow down")
+						td.currency__td 448.5
+					tr.currency__tr
+						td.currency__td 20.1
+						td.currency__td 450.8
+						td.currency__td
+							img(src="../assets/img/arrow-head.png", alt="arrow up")
+						td.currency__td +8.0
+
+
+
 		.main-content
 			.post
 				h2.post_title WHY SHOULD YOU COME TO POZNAN
@@ -48,4 +100,5 @@
 								button.post__comment.bth-unstyle
 								| 55 
 			
-			.advertising your ad here
+			.advertising 
+				| your ad here

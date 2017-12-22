@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <div class="header__wrapper container">
-        <div class="header_logo-block"><a class="header_logo">poz<span class="text-blue">nan</span> - city<span class="text-blue" >2<span>live</a>
+        <div class="header__logo-block"><a class="header__logo">poz<span class="text-blue">nan</span> - city<span class="text-blue" >2<span>live</a>
           <div class="social">
             <ul class="social__items list-unstyle">
               <li class="social__item"><a class="social__link social__link--evernote" href="#">evernote</a></li>
@@ -74,8 +74,59 @@
       <div class="contnet">
         <div class="content__wrraper container">
           <aside class="sidebar">
-            <h2 class="sidebar__title">ABOUT AUTHOR</h2>
-            <p class="sidebar__paragraph"><span class="sidebar__blue">John Doe</span> - lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta.</p>
+            <div class="author">
+              <h2 class="sidebar__title">ABOUT AUTHOR</h2>
+              <p class="sidebar__paragraph"><span class="sidebar__blue">John Doe</span> - lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta.</p>
+            </div>
+            <div class="related">
+              <h2 class="sidebar__title">RELATED POSTS</h2>
+              <ul class="related__items list-unstyle">
+                <li class="related__item"><a class="related__link" href="#"><img src="../assets/img/image-post-1.jpg" alt="Night">
+                    <div class="related__content">
+                      <h5 class="related__title">POZNAN AT NIGHT</h5>
+                      <button class="related__comment bth-unstyle">10 comments</button>
+                    </div></a></li>
+                <li class="related__item"><a class="related__link" href="#"><img src="../assets/img/image-post-2.jpg" alt="Night">
+                    <div class="related__content">
+                      <h5 class="related__title">PEOPLE TO MEET</h5>
+                      <button class="related__comment bth-unstyle">21 comments</button>
+                    </div></a></li>
+                <li class="related__item"><a class="related__link" href="#"><img src="../assets/img/image-post-3.jpg" alt="Night">
+                    <div class="related__content">
+                      <h5 class="related__title">VISIT OUR OFFICE</h5>
+                      <button class="related__comment bth-unstyle">17 comments</button>
+                    </div></a></li>
+              </ul>
+            </div>
+            <div class="currency">
+              <h2 class="sidebar__title currency__title">CURRENCY</h2>
+              <table class="currency__table">
+                <tr class="currency__tr">
+                  <td class="currency__th">Date</td>
+                  <td class="currency__th">Value</td>
+                  <td class="currency__th">Status</td>
+                  <td class="currency__th">Diff</td>
+                </tr>
+                <tr class="currency__tr">
+                  <td class="currency__td">22.1</td>
+                  <td class="currency__td">459.5</td>
+                  <td class="currency__td"> <img src="../assets/img/arrow-head.png" alt="arrow up"></td>
+                  <td class="currency__td">459.5</td>
+                </tr>
+                <tr class="currency__tr">
+                  <td class="currency__td">21.1</td>
+                  <td class="currency__td">448.5</td>
+                  <td class="currency__td"><img src="../assets/img/arrow-down.png" alt="arrow down"></td>
+                  <td class="currency__td">448.5</td>
+                </tr>
+                <tr class="currency__tr">
+                  <td class="currency__td">20.1</td>
+                  <td class="currency__td">450.8</td>
+                  <td class="currency__td"><img src="../assets/img/arrow-head.png" alt="arrow up"></td>
+                  <td class="currency__td">+8.0</td>
+                </tr>
+              </table>
+            </div>
           </aside>
           <div class="main-content">
             <div class="post">
@@ -128,11 +179,34 @@
                 </div>
               </div>
             </div>
-            <div class="advertising">your ad here</div>
+            <div class="advertising">
+               your ad here</div>
           </div>
         </div>
       </div>
+      <div class="map">
+        <div class="map__wrapper container">
+          <h2 class="map__title">WHERE CAN I FIND MORE INFORMATION</h2>
+        </div>
+        <div id="map"></div>
+      </div>
     </main>
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <div class="footer-nav"><a class="header__logo footer__logo">poz<span class="text-blue">nan</span> - city<span class="text-blue" >2<span>live</a>
+          <nav class="nav nav--footer">
+            <ul class="nav__items list-unstyle">
+              <li class="nav__item"><a class="nav__link nav__link--footer" href="#">home</a></li>
+              <li class="nav__item"><a class="nav__link nav__link--footer" href="#">product</a></li>
+              <li class="nav__item"><a class="nav__link nav__link--footer" href="#">services</a></li>
+              <li class="nav__item"><a class="nav__link nav__link--footer" href="#">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__rights">all rights reserved 2013 </div>
+      </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQxea9uuYkd3uIsN1ph9z3VKkNOP5wKQ8"></script>
     <script src="assets/js/app.js"></script>
   </body>
 </html>

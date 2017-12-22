@@ -1,0 +1,30 @@
+.footer-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px dotted #d5d5d5;	
+	padding: 14px 0;
+}
+
+.footer__logo {
+	font-size: 16px;
+}
+
+.nav--footer {
+	margin-top: 0;
+}
+
+.nav__link--footer {
+	padding: 3.2px 1px;
+	margin-right: 0;
+    margin-left: 28px;
+}
+
+.footer__rights {
+	text-align: center;
+	font-family: "Arial",sans-serif;
+	font-size: 10px;
+	color: #787878;
+	text-transform: uppercase;
+	padding: 12px 0;
+}

@@ -21,17 +21,17 @@ header {
 	padding-bottom: 11px;
 	border-bottom: 2px solid #22aaec;
 }
-.header__wrapper {
+.header__wrapper {  
 	padding-top: 10px;
 }
 
-.header_logo-block {
+.header__logo-block {
 	position: relative;
 	display: flex;
 	justify-content: center;
 }
 
-.header_logo {
+.header__logo {
 	color: #076e9f;
 	font-size: 2rem;
 	text-transform: uppercase;
